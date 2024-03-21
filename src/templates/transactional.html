@@ -5,12 +5,12 @@ bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <div class="bg-slate-50 sm:px-4 font-sans">
+  <div class="bg-slate-50 rounded-md w-8/12 sm:w-10/12 m-auto sm:px-4 font-sans">
     <table align="center">
       <tr>
-        <td class="w-[752px] max-w-full">
-          <div class="my-12 sm:my-8 text-center">
-            <a href="https://maizzle.com">
+        <td>
+          <div class="my-12  sm:my-8 text-center">
+            <a href="https://xieffect.ru/">
               <img alt="Maizzle" class="w-[300px] h-[39px]" src="images/xieffectlight.webp" width="70">
             </a>
           </div>
@@ -33,7 +33,7 @@ bodyClass: bg-slate-50
                     Подтвердить почту
                   </x-button>
                 </div>
-                <x-spacer height="34px"/>
+                <x-spacer height="44px"/>
                 <div class="flex justify-center gap-5">
                   <a class="bg-inherit border-none cursor-pointer" href="https://vk.com/xieffect" target="_blank">
                     <img alt="vk" src="images/icons/vk.svg">
@@ -48,12 +48,13 @@ bodyClass: bg-slate-50
                     <img alt="dzen" src="images/icons/dzen.svg">
                   </a>
                 </div>
-                <x-spacer height="14px"/>
-                <div class="opacity-90 text-center mb-4">
+                <x-spacer height="24px"/>
+                <div class="opacity-90 text-center">
                   <a class="text-inherit no-underline" href="https://support@xieffect.ru" target="_blank">support@xieffect.ru</a>
                   <span class="dot">•</span>
                   <a class="text-inherit no-underline" href="https://xieffect.ru" target="_blank">xieffect.ru</a>
                 </div>
+                <x-spacer height="24px"/>
                 <p class="m-0 text-center opacity-70">
                   Вы получили это письмо, потому что зарегистрировались на сайте xieffect.ru.
                   Если вы не регистрировались, пожалуйста, проигнорируйте письмо
@@ -65,4 +66,5 @@ bodyClass: bg-slate-50
       </tr>
     </table>
   </div>
+  <x-spacer height="44px"/>
 </x-main>
