@@ -5,33 +5,38 @@ bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <div class="rounded-md w-8/12 sm:w-10/12 m-auto sm:px-4 font-sans">
+  <div>
     <table align="center">
       <tr>
         <td>
-          <div class="my-12  sm:my-8 text-center">
+          <x-spacer height="32px"/>
+          <div class="text-center">
             <a href="https://xieffect.ru/">
-              <img alt="Maizzle" class="w-[300px] h-[39px]" src="images/xieffectlight.webp" width="70">
+              <img alt="Maizzle" class="w-[300px] h-[39px] sm:w-[200px] sm:h-[29px]" src="images/xieffectlight.webp"
+                   width="70">
             </a>
           </div>
-
-          <table class="w-full">
+          <x-spacer height="32px"/>
+          <table class="w-[600px] sm:w-fit sm:m-auto">
             <tr>
-              <td class="p-12 sm:px-6 text-base text-slate-700">
-                <div class="border bg-slate-50 border-solid px-10 py-12 rounded-md">
-                  <h1 class="m-0 mb-6  text-4xl sm:leading-8 text-black font-semibold">
+              <td>
+                <!--                text-base text-slate-700-->
+                <div class="border p-[50px]  border-zinc-400 border-solid rounded-3xl px-10 py-12">
+                  <h1 class="m-0 mb-6  text-gray-100 text-4xl sm:leading-8 font-semibold">
                     Добро пожаловать!
                   </h1>
 
-                  <p>
+                  <p class="text-gray-100">
                     Вы успешно создали аккаунт на<b> xi.effect</b>.<br>
                     Пожалуйста, нажмите на кнопку ниже <br>
                     для подтверждения почты
                   </p>
                   <x-spacer height="14px"/>
-                  <x-button href="https://github.com/xi-effect">
-                    Подтвердить почту
-                  </x-button>
+                  <div class="sm:w-2/3">
+                    <x-button href="https://github.com/xi-effect">
+                      Подтвердить почту
+                    </x-button>
+                  </div>
                 </div>
                 <x-spacer height="44px"/>
                 <div class="flex justify-center gap-5">
@@ -49,22 +54,22 @@ bodyClass: bg-slate-50
                   </a>
                 </div>
                 <x-spacer height="24px"/>
-                <div class="opacity-90 text-center">
+                <div class="text-center text-gray-90">
                   <a class="text-inherit no-underline" href="https://support@xieffect.ru" target="_blank">support@xieffect.ru</a>
                   <span class="dot">•</span>
                   <a class="text-inherit no-underline" href="https://xieffect.ru" target="_blank">xieffect.ru</a>
                 </div>
                 <x-spacer height="24px"/>
-                <p class="m-0 text-center opacity-70">
-                  Вы получили это письмо, потому что зарегистрировались на сайте xieffect.ru.
-                  Если вы не регистрировались, пожалуйста, проигнорируйте письмо
-                </p>
               </td>
             </tr>
           </table>
         </td>
       </tr>
     </table>
+    <p class="text-center w-[600px] m-auto sm:m-0 sm:w-full text-gray-70">
+      Вы получили это письмо, потому что зарегистрировались на сайте xieffect.ru.
+      Если вы не регистрировались, пожалуйста, проигнорируйте письмо
+    </p>
   </div>
   <x-spacer height="44px"/>
 </x-main>
