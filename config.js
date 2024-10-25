@@ -13,6 +13,9 @@
 
 module.exports = {
   build: {
+    components: {
+      slot: 'provide',
+    },
     templates: {
       source: 'src/templates',
       destination: {
