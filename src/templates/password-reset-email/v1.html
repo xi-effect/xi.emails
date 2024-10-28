@@ -5,103 +5,23 @@ bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <div>
-    <table align="center" class="font-sans">
-      <tr>
-        <td>
-          <x-spacer height="32px" class="xs:h-[24px]"/>
-          <div class="text-center">
-            <a href="https://xieffect.ru/">
-              <img
-                alt="xieffect"
-                class="w-[300px] h-[39px] sm:w-[200px] sm:h-[29px] xs:w-[136px] xs:h-[16px]"
-                src="../images/xieffectlight.webp"
-                width="70"
-              />
-            </a>
-          </div>
-          <x-spacer height="32px" class="xs:h-[24px]"/>
-          <table class="w-[600px] sm:w-fit sm:m-auto">
-            <tr>
-              <td>
-                <div
-                  class="border p-[48px] border-gray-30 border-solid rounded-3xl xs:p-[24px]"
-                >
-                  <h1 class="m-0 text-gray-100 text-[40px] leading-[120%] xs:text-[30px] xs:leading-[120%] xs:mb-1">
-                    Сброс пароля
-                  </h1>
-                  <p class="text-gray-100 font-normal text-[20px] leading-[140%] xs:text-[16px] xs:leading-[150%]">
-                    Вы сделали запрос на смену пароля на <b>xi.effect.</b><br />
-                    Для подтверждения действия, нажмите на кнопку
-                    ниже
-                  </p>
-                  <x-spacer height="4px" />
-                  <div class="w-[34%] xs:w-10/12 xs:text-[16px] text-center">
-                    <x-button href="https://github.com/xi-effect">
-                      Сбросить пароль
-                    </x-button>
-                  </div>
-                </div>
-                <x-spacer height="32px" />
-                <div class="flex justify-center gap-5">
-                  <a
-                    class="bg-inherit border-none cursor-pointer"
-                    href="https://vk.com/xieffect"
-                    target="_blank"
-                  >
-                    <img alt="vk" src="../images/icons/vk.svg" />
-                  </a>
-                  <a
-                    class="bg-inherit border-none cursor-pointer"
-                    href="https://t.me/xieffect"
-                    target="_blank"
-                  >
-                    <img alt="telegram" src="../images/icons/telegram.svg" />
-                  </a>
-                  <a
-                    class="bg-inherit border-none cursor-pointer"
-                    href="https://xieffect.ru/"
-                    target="_blank"
-                  >
-                    <img alt="youtube" src="../images/icons/youtube.svg" />
-                  </a>
-                  <a
-                    class="bg-inherit border-none cursor-pointer"
-                    href="https://xieffect.ru/"
-                    target="_blank"
-                  >
-                    <img alt="dzen" src="../images/icons/dzen.svg" />
-                  </a>
-                </div>
-                <x-spacer height="32px" class='xs:h-[16px]'/>
-                <div class="text-center text-gray-90 font-bold text-[16px] leading-[137%] xs:text-[14px] xs:leading-[143%] opacity-60">
-                  <a
-                    class="text-inherit no-underline"
-                    href="mailto:support@xieffect.ru"
-                    >support@xieffect.ru</a
-                  >
-                  <span class="dot">•</span>
-                  <a
-                    class="text-inherit no-underline"
-                    href="https://xieffect.ru"
-                    target="_blank"
-                    >xieffect.ru
-                  </a>
-                </div>
-                <x-spacer height="20px" class='xs:h-[10px]'/>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <p
-      class="text-center w-[600px] font-sans m-auto sm:m-0 sm:w-full text-gray-70 sm:text-[14px] leading-[143%] xs:text-[12px] xs:leading-[133%]"
-    >
-    Вы получили это письмо, потому что запросили сброс пароя на сайте
-    xieffect.ru. Если вы не запрашивали, пожалуйста, проигнорируйте
-    письмо
-    </p>
-  </div>
+  <fill:main-title>Сброс пароля</fill:main-title>
+  <fill:main-text>
+    Вы сделали запрос на смену пароля на <b>xi.effect.</b><br />
+    Для подтверждения действия, нажмите на кнопку
+    ниже
+  </fill:main-text>
+  <fill:main-button>
+    <x-button href="reset-password/{{ token }}">
+      Сбросить пароль
+    </x-button>
+  </fill:main-button>
+  <fill:footer-text>
+    <x-footer>
+      Вы получили это письмо, потому что запросили сброс пароя на сайте
+      xieffect.ru. Если вы не запрашивали, пожалуйста, проигнорируйте
+      письмо
+    </x-footer>
+  </fill:footer-text>
   <x-spacer height="44px" />
 </x-main>
