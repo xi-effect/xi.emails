@@ -5,21 +5,21 @@ bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <x-table>
-    <fill:main-title>Смена почты</fill:main-title>
-    <fill:main-text>
-      Вы запросили смену адреса электронной почты
-      на <b>xi.effect.</b> Для подтверждения нового адреса почты, нажмите на кнопку ниже
-    </fill:main-text>
-    <fill:main-button>
-      <x-button href="confirm-email/{{ token }}">
-        Сменить почту
-      </x-button>
-    </fill:main-button>
+  <fill:main-title>Смена почты</fill:main-title>
+  <fill:main-text>
+    Вы запросили смену адреса электронной почты
+    на <b>xi.effect.</b> Для подтверждения нового адреса почты, нажмите на кнопку ниже
+  </fill:main-text>
+  <fill:main-button>
+    <x-button href="confirm-email/{{ token }}">
+      Сменить почту
+    </x-button>
+  </fill:main-button>
   </x-table>
-  <x-footer>
-    Вы получили это письмо, потому что запросили смену адреса электронной почты на сайте xieffect.ru.
-    Если вы не запрашивали, пожалуйста, проигнорируйте письмо
-  </x-footer>
-  <x-spacer height="44px" />
+  <fill:footer-text>
+    <x-footer>
+      Вы получили это письмо, потому что запросили смену адреса электронной почты на сайте xieffect.ru.
+      Если вы не запрашивали, пожалуйста, проигнорируйте письмо
+    </x-footer>
+  </fill:footer-text>
 </x-main>

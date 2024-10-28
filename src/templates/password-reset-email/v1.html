@@ -5,23 +5,23 @@ bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <x-table>
-    <fill:main-title>Сброс пароля</fill:main-title>
-    <fill:main-text>
-      Вы сделали запрос на смену пароля на <b>xi.effect.</b><br />
-      Для подтверждения действия, нажмите на кнопку
-      ниже
-    </fill:main-text>
-    <fill:main-button>
-      <x-button href="reset-password/{{ token }}">
-        Сбросить пароль
-      </x-button>
-    </fill:main-button>
-  </x-table>
-  <x-footer>
-    Вы получили это письмо, потому что запросили сброс пароя на сайте
-    xieffect.ru. Если вы не запрашивали, пожалуйста, проигнорируйте
-    письмо
-  </x-footer>
+  <fill:main-title>Сброс пароля</fill:main-title>
+  <fill:main-text>
+    Вы сделали запрос на смену пароля на <b>xi.effect.</b><br />
+    Для подтверждения действия, нажмите на кнопку
+    ниже
+  </fill:main-text>
+  <fill:main-button>
+    <x-button href="reset-password/{{ token }}">
+      Сбросить пароль
+    </x-button>
+  </fill:main-button>
+  <fill:footer-text>
+    <x-footer>
+      Вы получили это письмо, потому что запросили сброс пароя на сайте
+      xieffect.ru. Если вы не запрашивали, пожалуйста, проигнорируйте
+      письмо
+    </x-footer>
+  </fill:footer-text>
   <x-spacer height="44px" />
 </x-main>

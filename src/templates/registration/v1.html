@@ -5,23 +5,23 @@ bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <x-table>
-    <fill:main-title>Добро пожаловать!</fill:main-title>
-    <fill:main-text>
-      Вы успешно создали аккаунт на<b> xi.effect</b>
-      Пожалуйста, нажмите на кнопку ниже
-      для подтверждения почты
-    </fill:main-text>
-    <fill:main-button>
-      <x-button href="confirm-email/{{ token }}">
-        Подтвердить почту
-      </x-button>
-    </fill:main-button>
-  </x-table>
-  <x-footer>
-    Вы получили это письмо, потому что зарегистрировались на сайте
+  <fill:main-title>Добро пожаловать!</fill:main-title>
+  <fill:main-text>
+    Вы успешно создали аккаунт на<b> xi.effect</b>
+    Пожалуйста, нажмите на кнопку ниже
+    для подтверждения почты
+  </fill:main-text>
+  <fill:main-button>
+    <x-button href="confirm-email/{{ token }}">
+      Подтвердить почту
+    </x-button>
+  </fill:main-button>
+  <fill:footer-text>
+    <x-footer>
+      Вы получили это письмо, потому что зарегистрировались на сайте
       xieffect.ru. Если вы не регистрировались, пожалуйста, проигнорируйте
       письмо
-  </x-footer>
+    </x-footer>
+  </fill:footer-text>
   <x-spacer height="44px" />
 </x-main>
